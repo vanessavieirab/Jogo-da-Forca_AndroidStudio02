@@ -5,9 +5,9 @@ class Fachada {
     private lateinit var joguinho: Forca
 
     fun registrarPadrao() {
-        this.banco.add("Pastel", "Feito de massa e vento")
-        this.banco.add("Casa", "Lar")
-        this.banco.add("Assaltante", "Vagabundo safado")
+        this.banco.add("Pastel", "Comida encontrada na feira")
+        this.banco.add("Cocada", "Feita de açúcar e côco")
+        this.banco.add("Cereja", "Fruta colocada em cima do bolo")
     }
     fun iniciar() {
         this.banco.sortear()
@@ -66,5 +66,9 @@ class Fachada {
 
     fun terminou(): Boolean {
         return joguinho.terminou()
+    }
+
+    fun tentativas(): Int {
+        return joguinho.getTentativas()
     }
 }

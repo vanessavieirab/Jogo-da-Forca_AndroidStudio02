@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Forca">
         <activity
+            android:name=".Resultado"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
